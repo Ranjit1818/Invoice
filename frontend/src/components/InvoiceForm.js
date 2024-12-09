@@ -47,7 +47,7 @@ const InvoiceForm = () => {
   
     try {
       const response = await axios.post(
-        "invoice-backend-orcin.vercel.app/api/generate-invoice",
+        "https://invoice-backend-orcin.vercel.app/api/generate-invoice",
         formData,
         {
           responseType: "blob", // Important for handling binary data
