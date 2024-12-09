@@ -47,7 +47,7 @@ const InvoiceForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/generate-invoice",
+        "invoice-backend-orcin.vercel.app/api/generate-invoice",
         formData
       );
       console.log("Invoice Generated: ", response.data);
